@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Grama Check</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-d.jpg" width="30" height="30"
+                    class="d-inline-block align-top" alt=""> Grama Check</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user-portal.html">User Portal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="officer-portal.html">Officer Portal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- landing page -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="home">
+        <div class="container py-5">
+            <div class="d-sm-flex align-items-center justify-content-between py-5">
+                <div>
+                    <h1>Welcome to Grama Check</h1>
+                    <h3 class="my-4">Digitalizing the way of obtaining Grama Certificates with ease</h3>
+                    <a href="help.html" class="btn btn-primary btn-lg">Get Started <i
+                            class="bi bi-chevron-right"></i></a>
+                </div>
+                <a href="#">
+                    <img src="img/landing.jpg" class="img-fluid" width="1000">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature page -->
+    <section class="p-5" id="services" style="background-color: #F9F9F9;">
+        <div class="container py-5">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-file-earmark-font"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Apply for Grama Certificate</h3>
+                            <p class="card-text">
+                                Apply for Grama Certificate with ease by filling a simple form. Takes only a few minutes
+                            </p>
+                            <a href="#user-page" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Check Certificate Status</h3>
+                            <p class="card-text">
+                                Track the Status of your Grama Certificate request with just your NIC
+                            </p>
+                            <a href="#user-page" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-window"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Grama Officer Dashboard</h3>
+                            <p class="card-text">
+                                Grama Officers Can Manage Requests with ease by completing requests from our Dashboard.
+                            </p>
+                            <a href="#officer-page" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- user page -->
+    <section class="p-5" id="user-page">
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md">
+                    <a href="#"><img src="img/user1.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md p-5">
+                    <h2>Apply For A Grama Certificate</h2>
+                    <p> Sign In As User </p>
+                    <p>
+                        Apply for a Grama Certificate with ease with just filling a simple form. Click on the button
+                        below to Sign in and Get Started.
+                    </p>
+                    <a href="user-portal.html" class="btn btn-primary mt-3">Apply Now <i
+                            class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- officer page -->
+    <section class="bg-dark text-light p-5" id="officer-page">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Officer Portal</h2>
+                    <p> Sign In As Officer </p>
+                    <p>
+                        Manage Grama Certificates with ease with our simple Dashboard. Click on the button below to
+                        Register Now and Get Started
+                    </p>
+                    <a href="officer-sign-in.html" class="btn btn-primary mt-3">Register Now <i
+                            class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="col-md">
+                    <a href="#"><img src="img/officer1.jpg" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="page-footer p-5 text-md-left" style="background-color: #F9F9F9;">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase font-weight-bold mb-4"><img src="img/logo-w.jpg" width="30" height="30"
+                            class="d-inline-block align-top" alt="">
+                        Grama Check
+                    </h5>
+                    <p>
+                        Grama Check is a Service Created by WSO2 Interns as Part of the GCP Team for the Choreo Project.
+                        This Project is built only for Educational Purposes.
+                    </p>
+                    <a href="https://github.com/NimBuzz01/Grama-Check-Front-End-2.0.git"><i
+                            class="bi bi-github text-dark mx-1 lead"></i></a>
+                    <a href="#"><i class="bi bi-slack text-dark mx-1 lead"></i></a>
+                </div>
+                <div class="col-lg-2 col-md-2 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">Apply Grama Certificate</li>
+                        <li class="mb-1">Certificate Status Check</li>
+                        <li class="mb-1">Officer Dashboard</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Page Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="#home"><i class="bi bi-chevron-right" style="color: #ff7300;"></i>
+                                Home</a></li>
+                        <li class="mb-1"><a href="#user-page"><i class="bi bi-chevron-right"
+                                    style="color: #ff7300;"></i> User Portal</a></li>
+                        <li class="mb-1"><a href="#officer-page"><i class="bi bi-chevron-right"
+                                    style="color: #ff7300;"></i> Officer Portal</a></li>
+                        <li class="mb-1"><a href="help.html"><i class="bi bi-chevron-right" style="color: #ff7300;"></i>
+                                Help Page</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12 location">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Location</h5>
+                    <p class="d-flex align-items-center">
+                        <i class="bi bi-geo-alt text-dark mx-2 lead"></i>20, Palm Grove, Colombo 3
+                    </p>
+                    <p class="d-flex align-items-center">
+                        <i class="bi bi-telephone text-dark mx-2 lead"></i>+94 11 214 5345 / +94 11 743 5800
+                    </p>
+                    <p class="d-flex align-items-center">
+                        <i class="bi bi-envelope text-dark mx-2 lead"></i>info@gramacheck.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+    <footer class="p-3 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="mb-0">
+                Copyright &copy; 2022 GCP Grama Check. Designed with &#10084;&#65039; by Niamat Marjan
+            </p>
+            <a href="#" class="position-fixed bottom-0 end-0 p-5"><i class="bi bi-arrow-up-square-fill h1"
+                    style="color: #ff7300;"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/@asgardeo/auth-spa@latest/dist/asgardeo-spa.production.min.js"></script>
+<script src="scripts/index.js"></script>
+
+
+</html>
