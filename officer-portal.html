@@ -55,183 +55,197 @@
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="selectAll">
-                                        <label for="selectAll"></label></th>
                                 <th>Name</th>
                                 <th>NIC</th>
                                 <th>Address</th>
                                 <th>Phone</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox1" name="option[]" value="1">
-                                        <label for="checkbox1"></label></th>
+                            <tr href="#info-modal" data-bs-toggle="modal">
                                 <th>Osama BinLaden</th>
                                 <th>200169420v</th>
                                 <th>69/420, Gota Go Gama, Sri Lanka</th>
                                 <th>+94776969420</th>
-                                <th>
-                                    <a href="#info-modal" class="edit" data-bs-toggle="modal"><i
-                                            class="bi bi-info-square" data-toggle="tooltip" title="More Info"></i></a>
-                                    <a href="#delete-modal" class="delete" data-bs-toggle="modal"><i class="bi bi-x-lg"
-                                            data-toggle="tooltip" title="Delete"></i></a>
-                                </th>
                             </tr>
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox2" name="option[]" value="1">
-                                        <label for="checkbox2"></label></th>
+                            <tr href="#info-modal" data-bs-toggle="modal">
                                 <th>Osama BinLaden</th>
                                 <th>200169420v</th>
                                 <th>69/420, Gota Go Gama, Sri Lanka</th>
                                 <th>+94776969420</th>
-                                <th>
-                                    <a href="#info-modal" class="edit" data-bs-toggle="modal"><i
-                                            class="bi bi-info-square" data-toggle="tooltip" title="More Info"></i></a>
-                                    <a href="#delete-modal" class="delete" data-bs-toggle="modal"><i class="bi bi-x-lg"
-                                            data-toggle="tooltip" title="Delete"></i></a>
-                                </th>
                             </tr>
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox3" name="option[]" value="1">
-                                        <label for="checkbox3"></label></th>
+                            <tr href="#info-modal" data-bs-toggle="modal">
                                 <th>Osama BinLaden</th>
                                 <th>200169420v</th>
                                 <th>69/420, Gota Go Gama, Sri Lanka</th>
                                 <th>+94776969420</th>
-                                <th>
-                                    <a href="#info-modal" class="edit" data-bs-toggle="modal"><i
-                                            class="bi bi-info-square" data-toggle="tooltip" title="More Info"></i></a>
-                                    <a href="#delete-modal" class="delete" data-bs-toggle="modal"><i class="bi bi-x-lg"
-                                            data-toggle="tooltip" title="Delete"></i></a>
-                                </th>
                             </tr>
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox4" name="option[]" value="1">
-                                        <label for="checkbox4"></label></th>
+                            <tr href="#info-modal" data-bs-toggle="modal">
                                 <th>Osama BinLaden</th>
                                 <th>200169420v</th>
                                 <th>69/420, Gota Go Gama, Sri Lanka</th>
                                 <th>+94776969420</th>
-                                <th>
-                                    <a href="#info-modal" class="edit" data-bs-toggle="modal"><i
-                                            class="bi bi-info-square" data-toggle="tooltip" title="More Info"></i></a>
-                                    <a href="#delete-modal" class="delete" data-bs-toggle="modal"><i class="bi bi-x-lg"
-                                            data-toggle="tooltip" title="Delete"></i></a>
-                                </th>
                             </tr>
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox5" name="option[]" value="1">
-                                        <label for="checkbox5"></label></th>
+                            <tr href="#info-modal" data-bs-toggle="modal">
                                 <th>Osama BinLaden</th>
                                 <th>200169420v</th>
                                 <th>69/420, Gota Go Gama, Sri Lanka</th>
                                 <th>+94776969420</th>
-                                <th>
-                                    <a href="#info-modal" class="edit" data-bs-toggle="modal"><i
-                                            class="bi bi-info-square" data-toggle="tooltip" title="More Info"></i></a>
-                                    <a href="#delete-modal" class="delete" data-bs-toggle="modal"><i class="bi bi-x-lg"
-                                            data-toggle="tooltip" title="Delete"></i></a>
-                                </th>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="clearfix">
-                        <div class="hint-text">showing <b>5</b> out of <b>25</b></div>
-                        <ul class="pagination">
-                            <li class="page-item disabled"><a href="#">Previous</a></li>
-                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                            <li class="page-item "><a href="#" class="page-link">2</a></li>
-                            <li class="page-item"><a href="#" class="page-link">3</a></li>
-                            <li class="page-item "><a href="#" class="page-link">4</a></li>
-                            <li class="page-item "><a href="#" class="page-link">5</a></li>
-                            <li class="page-item "><a href="#" class="page-link">Next</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Info Modal -->
-    <div id="info-modal" class="modal fade lg" tabindex="-1" role="dialog" aria-labelledby="info-modal"
-        aria-hidden="true">
+    <div id="info-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="info-modal" aria-hidden="true">
 
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="info-modal-label">More Info</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="info-body">
-                    <div class="info-row">
-                        <div class="col-md-5">
-                            <span>Grama ID</span>
+                <div class="modal-body d-flex" id="info-body">
+                    <div class="col">
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Name</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Osama Bin Laden
+                            </div>
                         </div>
-                        <div class="col-md-9 text-secondary">
-                            GSL11324
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>NIC</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                200169420v
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Date</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                2022-07-69
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Telephone</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                +946969420
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Grama ID</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                GSL11324
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Police Certificate Status</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Pending
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Division</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Colombo
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Sec Division</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Maradana
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <h5>Police Data</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Case Number</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                11111
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Severity</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Child Offender
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Case Date</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                2022-6-09
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Officer</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Mr. Andrew Tate
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Summary</span>
+                            </div>
+                            <div class="col-md-9 text-secondary">
+                                Need to Arrest This MF soon
+                            </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="info-row">
-                        <div class="col-md-5">
-                            <span>Police Report</span>
+                    <div class="col" id="image-container">
+                        <h5>Proof Images</h5>
+                        <div class="proof-image row">
+                            <img
+                                src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                         </div>
-                        <div class="col-md-9 text-secondary">
-                            Approved
+                        <div class="proof-image row">
+                            <img
+                                src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg">
                         </div>
-                    </div>
-                    <hr>
-                    <div class="info-row">
-                        <div class="col-md-5">
-                            <span>Report ID</span>
-                        </div>
-                        <div class="col-md-9 text-secondary">
-                            111123F
+                        <div class="proof-image row">
+                            <img
+                                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80">
                         </div>
                     </div>
-                    <hr>
-                    <div class="info-row">
-                        <div class="col-md-5">
-                            <span>Criminal Records</span>
-                        </div>
-                        <div class="col-md-9 text-secondary">
-                            None
-                        </div>
-                    </div>
+                </div>
+                <div class="popup-img" style="display: none;">
+                    <span><i class="bi bi-x-lg"></i></span>
+                    <img src="">
+                    <button class="btn btn-primary" id="download-btn" onclick="saveImage()">Download Image</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal" id="close-btn">Close</button>
                     <button type="button" class="btn btn-primary" id="success-btn">Mark as Done</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Delete Modal -->
-    <div id="delete-modal" class="modal fade lg" tabindex="-1" role="dialog" aria-labelledby="delete-modal"
-        aria-hidden="true">
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="delete-modal-label">Delete Request</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Are you sure you want to delete this Request?
-                    <p class="text-warning"><small>This action cannot be undone.</small></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal" id="close-btn">Close</button>
-                    <button type="button" class="btn btn-primary" id="success-btn">Delete</button>
                 </div>
             </div>
         </div>
@@ -322,39 +336,56 @@
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/@asgardeo/auth-spa@latest/dist/asgardeo-spa.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+<script src="scripts/officer-portal.js"></script>
+
 <script>
-var adminAuth = AsgardeoAuth.AsgardeoSPAClient.getInstance();
+    var adminAuth = AsgardeoAuth.AsgardeoSPAClient.getInstance();
     adminAuth.initialize({
-            signInRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/officer-portal.html",
-            signOutRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/index.html",
-            clientID: "RMhFnIyA4u21SQrYA1mGaGNUAo8a",
-            baseUrl: "https://api.asgardeo.io/t/sample404",
-            scope: [ "openid","profile" ]
+        signInRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/officer-portal.html",
+        signOutRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/index.html",
+        clientID: "RMhFnIyA4u21SQrYA1mGaGNUAo8a",
+        baseUrl: "https://api.asgardeo.io/t/sample404",
+        scope: ["openid", "profile"]
     });
-adminAuth.signIn({callOnlyOnRedirect:true});
+
+    function getBasicUserInfo() {
+        adminAuth.getBasicUserInfo().then((userinfoResponse) => {
+            console.log(userinfoResponse); // check userinfo response
+            // check email
+
+        }).catch((error) => {
+            console.error(error);
+        });
+    }
 
 
-function logOut() {
-    adminAuth.signOut().then(response=>{
-        if(response.message="The user must be authenticated first."){
-            alert("Session expired, Sign in again");
-            window.location.href="index.html";
 
-        }
-    })
-    
-}   
-function getDecodedIdToken(){
+    adminAuth.signIn({ callOnlyOnRedirect: true }).then(Response => {
+        adminAuth.getAccessToken().then(response => {
+            console.log(response);
+            getBasicUserInfo();
+        }).catch(error=>{
+            adminAuth.trySignInSilently();
+        })
 
-adminAuth.getDecodedIDToken().then((idToken) => {
-        var decodedIdToken = idToken;
-        // Get claims from the decoded idtoken
-        console.log(decodedIdToken);
-    })
-}
-getDecodedIdToken();
+    });
 
 
+    function logOut() {
+        adminAuth.signOut().then(response => {
+            if (response.message = "The user must be authenticated first.") {
+                alert("Session expired, Sign in again");
+                window.location.href = "index.html";
+
+
+            }
+        })
+
+    }
+
+
+   
 
 </script>
 

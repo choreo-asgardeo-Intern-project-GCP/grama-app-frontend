@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="https://unpkg.com/@asgardeo/auth-spa@latest/dist/asgardeo-spa.production.min.js"></script>
+<script>
+
+
+var userAuth = AsgardeoAuth.AsgardeoSPAClient.getInstance();
+
+userAuth.initialize({
+    signInRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/user-portal.html",
+    signOutRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/index.html",
+    clientID: "5ynhFBWAfqYznFHVf0J5mYAxexAa",
+    baseUrl: "https://api.asgardeo.io/t/sample404",
+    scope: [ "openid","profile" ]
+});
+userAuth.signIn();
+
+
+</script>
+</html>
