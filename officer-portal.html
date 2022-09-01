@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo-d.jpg" width="30" height="30"
-                    class="d-inline-block align-top" alt=""> Grama Check</a>
+                    class="d-inline-block align-top" alt=""> <i class="bi bi-chevron-compact-right"></i> Officer Portal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,14 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Officer Portal
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" onclick="logOut()">Log Out</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout-btn" onclick="logOut()">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -61,37 +55,8 @@
                                 <th>Phone</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr href="#info-modal" data-bs-toggle="modal">
-                                <th>Osama BinLaden</th>
-                                <th>200169420v</th>
-                                <th>69/420, Gota Go Gama, Sri Lanka</th>
-                                <th>+94776969420</th>
-                            </tr>
-                            <tr href="#info-modal" data-bs-toggle="modal">
-                                <th>Osama BinLaden</th>
-                                <th>200169420v</th>
-                                <th>69/420, Gota Go Gama, Sri Lanka</th>
-                                <th>+94776969420</th>
-                            </tr>
-                            <tr href="#info-modal" data-bs-toggle="modal">
-                                <th>Osama BinLaden</th>
-                                <th>200169420v</th>
-                                <th>69/420, Gota Go Gama, Sri Lanka</th>
-                                <th>+94776969420</th>
-                            </tr>
-                            <tr href="#info-modal" data-bs-toggle="modal">
-                                <th>Osama BinLaden</th>
-                                <th>200169420v</th>
-                                <th>69/420, Gota Go Gama, Sri Lanka</th>
-                                <th>+94776969420</th>
-                            </tr>
-                            <tr href="#info-modal" data-bs-toggle="modal">
-                                <th>Osama BinLaden</th>
-                                <th>200169420v</th>
-                                <th>69/420, Gota Go Gama, Sri Lanka</th>
-                                <th>+94776969420</th>
-                            </tr>
+                        <tbody id="requestTable">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -114,64 +79,72 @@
                             <div class="col-md-5">
                                 <span>Name</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Osama Bin Laden
+                            <div class="col-md-9 text-secondary" id="name">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>NIC</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                200169420v
+                            <div class="col-md-9 text-secondary" id="nic">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Date</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                2022-07-69
+                            <div class="col-md-9 text-secondary" id="date">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Telephone</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                +946969420
+                            <div class="col-md-9 text-secondary" id="phone">
+                               
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Grama ID</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                GSL11324
+                            <div class="col-md-9 text-secondary" id="gramaId">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
-                                <span>Police Certificate Status</span>
+                                <span>Actual Address</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Pending
+                            <div class="col-md-9 text-secondary" id="actualAddress">
+                                
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-md-5">
+                                <span>Provided Address</span>
+                            </div>
+                            <div class="col-md-9 text-secondary" id="providedAddress">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Division</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Colombo
+                            <div class="col-md-9 text-secondary" id="division">
+                               
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
-                                <span>Sec Division</span>
+                                <span>Divisional Secretariat</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Maradana
+                            <div class="col-md-9 text-secondary" id="secDivision">
+                               
                             </div>
                         </div>
                         <hr>
@@ -185,56 +158,49 @@
                             <div class="col-md-5">
                                 <span>Case Number</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                11111
+                            <div class="col-md-9 text-secondary" id="caseNumber">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Severity</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Child Offender
+                            <div class="col-md-9 text-secondary" id="severity">
+                                
                             </div>
                         </div>
-                        <div class="info-row">
-                            <div class="col-md-5">
-                                <span>Case Date</span>
-                            </div>
-                            <div class="col-md-9 text-secondary">
-                                2022-6-09
-                            </div>
-                        </div>
+                       
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Officer</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Mr. Andrew Tate
+                            <div class="col-md-9 text-secondary" id="officer">
+                                
                             </div>
                         </div>
                         <div class="info-row">
                             <div class="col-md-5">
                                 <span>Summary</span>
                             </div>
-                            <div class="col-md-9 text-secondary">
-                                Need to Arrest This MF soon
+                            <div class="col-md-9 text-secondary" id="summary">
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col" id="image-container">
                         <h5>Proof Images</h5>
-                        <div class="proof-image row">
-                            <img
-                                src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        <div class="proof-image row" >
+                            <img id="user_nic_front"
+                                src="">
                         </div>
-                        <div class="proof-image row">
-                            <img
-                                src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg">
+                        <div class="proof-image row" >
+                            <img id="user_nic_back"
+                                src="">
                         </div>
-                        <div class="proof-image row">
-                            <img
-                                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80">
+                        <div class="proof-image row" >
+                            <img id="user_address"
+                                src="">
                         </div>
                     </div>
                 </div>
@@ -245,7 +211,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal" id="close-btn">Close</button>
-                    <button type="button" class="btn btn-primary" id="success-btn">Mark as Done</button>
+                    <button id="markAsDone" type="button" class="btn btn-primary" id="success-btn">Mark as Done</button>
                 </div>
             </div>
         </div>
@@ -259,7 +225,7 @@
                     Need Help? View our User Guide
                 </h3>
                 <div>
-                    <a href="help.html" class="btn btn-primary btn-lg">Click Here <i
+                    <a href="help-g.html" class="btn btn-primary btn-lg">Click Here <i
                             class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
@@ -300,7 +266,7 @@
                                     style="color: #ff7300;"></i> User Portal</a></li>
                         <li class="mb-1"><a href="#officer-page"><i class="bi bi-chevron-right"
                                     style="color: #ff7300;"></i> Officer Portal</a></li>
-                        <li class="mb-1"><a href="help.html"><i class="bi bi-chevron-right" style="color: #ff7300;"></i>
+                        <li class="mb-1"><a href="help-g.html"><i class="bi bi-chevron-right" style="color: #ff7300;"></i>
                                 Help Page</a></li>
                     </ul>
                 </div>
@@ -336,57 +302,10 @@
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/@asgardeo/auth-spa@latest/dist/asgardeo-spa.production.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="scripts/officer-portal.js"></script>
 
-<script>
-    var adminAuth = AsgardeoAuth.AsgardeoSPAClient.getInstance();
-    adminAuth.initialize({
-        signInRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/officer-portal.html",
-        signOutRedirectURL: "https://nimbuzz01.github.io/Grama-Check-Front-End-2.0/index.html",
-        clientID: "RMhFnIyA4u21SQrYA1mGaGNUAo8a",
-        baseUrl: "https://api.asgardeo.io/t/sample404",
-        scope: ["openid", "profile"]
-    });
-
-    function getBasicUserInfo() {
-        adminAuth.getBasicUserInfo().then((userinfoResponse) => {
-            console.log(userinfoResponse); // check userinfo response
-            // check email
-
-        }).catch((error) => {
-            console.error(error);
-        });
-    }
-
-
-
-    adminAuth.signIn({ callOnlyOnRedirect: true }).then(Response => {
-        adminAuth.getAccessToken().then(response => {
-            console.log(response);
-            getBasicUserInfo();
-        }).catch(error=>{
-            adminAuth.trySignInSilently();
-        })
-
-    });
-
-
-    function logOut() {
-        adminAuth.signOut().then(response => {
-            if (response.message = "The user must be authenticated first.") {
-                alert("Session expired, Sign in again");
-                window.location.href = "index.html";
-
-
-            }
-        })
-
-    }
-
-
-   
-
-</script>
 
 </html>

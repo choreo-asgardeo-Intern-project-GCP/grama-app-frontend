@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Portal</title>
+    <title>Officer Help</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet">
-    <link href="user-portal.css" rel="stylesheet">
 </head>
 
-<body onload="createCaptcha()">
+<body>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo-d.jpg" width="30" height="30"
-                    class="d-inline-block align-top" alt=""> <i class="bi bi-chevron-compact-right"></i> User Portal</a>
+                    class="d-inline-block align-top" alt=""> Grama Check</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,66 +24,43 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="check-status.html">Check Status</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="logout-btn" onclick="userAuth.signOut()">Log Out</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Help Page
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Go to Home</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- application -->
-    <section class="p-5 align-items-center" id="status-container">
-        <h1>Apply for Grama Certificate</h1>
+    <!-- help section -->
+    <section class="p-5">
+        <h1 class="heading">Guide to Grama Check</h1>
+        <h3 class="d-flex flex-column align-items-center">Officer Guide</h3>
         <div class="container py-5">
-            <div class="form-field">
-                <input onkeyup="this.setAttribute('value', this.value);" value="" id="idNumber" class="input-text"
-                    type="text" name="">
-                <label for="idNumber" class="label">National Identity Card</label>
-            </div>
-            <div class="form-field">
-                <input onkeyup="this.setAttribute('value', this.value);" value="" id="address" class="input-text"
-                    type="text" name="">
-                <label for="address" class="label">Address</label>
-            </div>
-            <div class="form-field">
-                <label for="nic-img-f" class="form-label">Upload NIC (Front)</label>
-                <input class="form-control" type="file" id="imagefile1" accept="image/*">
-            </div>
-            <div class="form-field">
-                <label for="nic-img-b" class="form-label">Upload NIC (Back)</label>
-                <input class="form-control" type="file" id="imagefile2" accept="image/*">
-            </div>
-            <div class="form-field">
-                <label for="address-image" class="form-label">Upload Proof of Address</label>
-                <input class="form-control" type="file" id="imagefile3" accept="image/*">
-            </div>
-            <div class="form-field">
-                <label for="captcha-input" class="form-label">Enter Captcha</label>
-                <div id="captcha">
-                </div>
-                <div class="form-field d-flex">
-                    <input onkeyup="this.setAttribute('value', this.value);" value="" id="captcha-form"
-                        class="input-text" type="text" name="">
-                    <label for="captcha-form" class="label">Enter Captcha Text</label>
-                    <button class="captcha-refresh" onclick="createCaptcha()"><i class="bi bi-arrow-repeat h2 p-3"
-                            style="color: #ff7300;"></i></button>
-                </div>
+            <h4>Officer Portal</h4>
+            <p>1. Click on the “Register Now” button in the Home Page.</p>
+            <img src="img/OP1.png" class="img-fluid my-4" width="700">
 
-            </div>
+            <p>2. Then Sign-in or create an account in the Grama Check Application.</p>
+            <p>3. After that you can view the Officer Dashboard and then click on the relevant normal user display on
+                the Office Dashboard.</p>
+
+            <img src="img/OP2.png" class="img-fluid my-4" width="700">
+
+            <p>4. Then you might be seen on the normal user profile, after clarifying his or her details you can click
+                on the “Mark as Done” button. Then a normal user gets the message that his or her certification process
+                is over.</p>
+
+            <img src="img/OP3.png" class="img-fluid my-4" width="700">
+
+            <p>5. If that user process is still going on you can close and go back to the Officer Dashboard.</p>
         </div>
-        <div class="form-field" id="submit-btn">
-            <button class="btn btn-primary px-5 py-2" id="submit-btn-f" onclick="validate()">Submit</button>
-        </div>
-        </div>
-        <article class="bg-dark text-light p-5 text-center text-c">
-            <h3 class="mb-4 text-uppercase">Applied for Certificate?</h3>
-            <h5 class="mb-3">Check Status Now!</h5>
-            <a href="check-status.html" class="btn btn-primary">Click Here</a>
-        </article>
     </section>
 
     <!-- footer -->
@@ -121,7 +97,7 @@
                                     style="color: #ff7300;"></i> User Portal</a></li>
                         <li class="mb-1"><a href="#officer-page"><i class="bi bi-chevron-right"
                                     style="color: #ff7300;"></i> Officer Portal</a></li>
-                        <li class="mb-1"><a href="help-u.html"><i class="bi bi-chevron-right" style="color: #ff7300;"></i>
+                        <li class="mb-1"><a href="help.html"><i class="bi bi-chevron-right" style="color: #ff7300;"></i>
                                 Help Page</a></li>
                     </ul>
                 </div>
@@ -152,10 +128,7 @@
         </div>
     </footer>
 </body>
-<script src="https://unpkg.com/@asgardeo/auth-spa@latest/dist/asgardeo-spa.production.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="scripts/user-portal.js"></script>
 
 </html>
